@@ -30,13 +30,13 @@ jobs:
       - uses: Nuitka/Nuitka-Action@main
         with:
           nuitka-version: main
-          script-name: ircreinvent_noway/client/client.py
+          script-name: client/client.py
 
 
       - uses: Nuitka/Nuitka-Action@main
         with:
           nuitka-version: main
-          script-name: ircreinvent_noway/server/server.py
+          script-name: server/server.py
 
           
       - uses: actions/upload-artifact@v4
