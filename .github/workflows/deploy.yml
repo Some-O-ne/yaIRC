@@ -31,12 +31,13 @@ jobs:
         with:
           nuitka-version: main
           script-name: client/client.py
-
+          standalone: true
 
       - uses: Nuitka/Nuitka-Action@main
         with:
           nuitka-version: main
           script-name: server/server.py
+          standalone: true
 
           
       - uses: actions/upload-artifact@v4
